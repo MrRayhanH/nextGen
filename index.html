@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexTech Solutions | Digital Growth Agency</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; }
+        body { background: #050505; color: #fff; line-height: 1.6; overflow-x: hidden; }
+        
+        .hero { min-height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 20px; background: radial-gradient(circle at 50% 50%, #0c1524 0%, #050505 80%); }
+        
+        /* Responsive Contact Block */
+        .professional-contact { 
+            display: flex; 
+            align-items: center; 
+            gap: 20px; 
+            margin: 30px 0; 
+            padding: 15px 30px; 
+            border: 1px solid #1a1a1a; 
+            border-radius: 50px; 
+            background: #0a0a0a;
+            flex-wrap: wrap; /* Wraps on mobile */
+            justify-content: center;
+        }
+        .contact-item { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 500; font-size: 0.9rem; }
+        .separator { width: 1px; height: 20px; background: #222; }
+
+        h1 { font-size: clamp(2rem, 5vw, 4rem); font-weight: 900; margin-bottom: 10px; }
+        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 40px; }
+        
+        .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 20px; }
+        
+        /* Responsive Form */
+        .contact-section { padding: 80px 20px; }
+        .form-box { max-width: 600px; margin: 0 auto; }
+        input, textarea { width: 100%; padding: 15px; margin-bottom: 15px; background: #0d0d0d; border: 1px solid #222; color: #fff; border-radius: 12px; }
+        button { width: 100%; padding: 16px; background: #fff; color: #000; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; }
+
+        /* Mobile specific adjustments */
+        @media (max-width: 600px) {
+            .professional-contact { border-radius: 20px; gap: 10px; flex-direction: column; text-align: center; }
+            .separator { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>Turn Your Offline Business <br><span class="gradient-text">Into a Digital Empire</span></h1>
+        <p style="color: #666; max-width: 600px; margin-bottom: 20px; padding: 0 10px;">We design bespoke mobile apps and web platforms that automate your operations and skyrocket your revenue.</p>
+        
+        <div class="professional-contact">
+            <a href="tel:+8801732210145" class="contact-item"><span>📞</span> +880 1732-210145</a>
+            <div class="separator"></div>
+            <a href="mailto:rayhanhassan41@gmail.com" class="contact-item"><span>✉️</span> rayhanhassan41@gmail.com</a>
+        </div>
+
+        <a href="#contact" style="padding: 15px 40px; background: #38bdf8; color: #000; border-radius: 50px; text-decoration: none; font-weight: bold;">Start Your Growth</a>
+    </section>
+
+    <div class="container">
+        <h2 style="text-align: center; font-size: 2rem;">Why Partner With NexTech?</h2>
+        <div class="grid">
+            <div class="glass-card">
+                <h3>Global Market Access</h3>
+                <p style="color: #888; margin-top: 10px;">We build digital storefronts that put your brand in front of millions of potential customers, 24/7.</p>
+            </div>
+            <div class="glass-card">
+                <h3>Scalable Automation</h3>
+                <p style="color: #888; margin-top: 10px;">Replace slow manual tasks with smart automation. Reduce overhead costs and maximize your net profit.</p>
+            </div>
+            <div class="glass-card">
+                <h3>Mobile Supremacy</h3>
+                <p style="color: #888; margin-top: 10px;">Native Android & iOS experiences that build customer loyalty and make your business a daily part of your customers' lives.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact-section" id="contact">
+        <div class="form-box">
+            <h2 style="text-align: center; margin-bottom: 30px;">Ready to Scale?</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="YOUR-KEY-HERE">
+                <input type="text" name="name" placeholder="Business Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Tell us how we can help you grow..." required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; color: #333; font-size: 0.8rem;">
+        &copy; 2024 NexTech Solutions | Digital Growth Experts
+    </footer>
+
+</body>
+</html>
